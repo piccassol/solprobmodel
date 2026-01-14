@@ -1,0 +1,42 @@
+{
+  "name": "privacy-oracle-agent",
+  "version": "1.1.0",
+  "description": "AI agent for creating privacy-themed prediction markets on Solana",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "privacy-oracle": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "agent": "node src/cli.js",
+    "create": "node src/cli.js create",
+    "list": "node src/cli.js list",
+    "daemon": "node src/cli.js daemon",
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "solana",
+    "privacy",
+    "prediction-markets",
+    "pnp",
+    "helius",
+    "ai-agent",
+    "autonomous"
+  ],
+  "author": "ARK Technologies",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.98.4",
+    "better-sqlite3": "^11.7.0",
+    "chalk": "^5.6.2",
+    "commander": "^14.0.2",
+    "cron-parser": "^4.9.0",
+    "dotenv": "^17.2.3",
+    "express": "^4.22.1",
+    "inquirer": "^9.3.8",
+    "ora": "^8.2.0",
+    "pnp-sdk": "^0.2.3",
+    "rss-parser": "^3.13.0"
+  }
+}
